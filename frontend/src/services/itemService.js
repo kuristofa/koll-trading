@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'https://koll-trading.vercel.app/api';
+const API_BASE_URL = 'https://koll-trading.vercel.app';
 
 const api = axios.create({
   baseURL: API_BASE_URL,
