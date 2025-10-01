@@ -1,11 +1,8 @@
 import express from 'express';
 import cors from 'cors';
 import mongoose from 'mongoose';
-import dotenv from 'dotenv';
 import itemRoutes from './routes/items.js';
 import transactionRoutes from './routes/transactions.js';
-
-dotenv.config();
 
 const app = express();
 
@@ -14,6 +11,7 @@ app.use(cors());
 app.use(express.json());
 
 // ---------- Database Connection ----------
+console.log('MONGO_URI:', process.env.MONGO_URI);
 mongoose
     .connect(process.env.MONGO_URI)
     .then(() => console.log('MongoDB connected'))
