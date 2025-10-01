@@ -35,8 +35,5 @@ app.use('/api/items', itemRoutes);
 app.use('/api/transactions', transactionRoutes);
 
 
-// ---------- Start Server ----------
-const PORT = process.env.PORT || 5000;
-app.listen(PORT,  () => {
-    console.log('Server is running on port 5000')
-});
+// ---------- Export for Vercel ----------
+export default app;
