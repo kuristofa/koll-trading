@@ -46,7 +46,7 @@ export default function Inventory() {
     <div className="p-6 max-w-7xl mx-auto">
       <div className="mb-6 flex justify-between items-center">
         <div>
-          <h1 className="text-4xl font-bold text-red-600 mb-2">Junkshop Inventory</h1>
+          <h1 className="text-4xl font-bold text-red-600 mb-2">KOLL Trading</h1>
           <p className="text-gray-700 font-medium">Transaction log of received items</p>
         </div>
         <button
