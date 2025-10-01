@@ -30,6 +30,12 @@ const itemSchema = new mongoose.Schema({
     },
             message: props => `${props.value} is not a valid subcategory for ${this.mainCategory}`
         }
+    },
+
+    transaction: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Transaction',
+        required: false
     }
 
 }, { timestamps: true });

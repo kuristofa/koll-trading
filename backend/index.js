@@ -3,6 +3,7 @@ import cors from 'cors';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import itemRoutes from './routes/items.js';
+import transactionRoutes from './routes/transactions.js';
 
 dotenv.config();
 
@@ -29,6 +30,9 @@ app.get('/api', (req, res) => {
 
 // ---------- Items API Routes ----------
 app.use('/api/items', itemRoutes);
+
+// ---------- Transactions API Routes ----------
+app.use('/api/transactions', transactionRoutes);
 
 
 // ---------- Start Server ----------
